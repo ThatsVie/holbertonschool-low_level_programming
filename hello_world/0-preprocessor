@@ -1,2 +1,2 @@
-#!/bin/bash
-#include <stdio.h> int main {printf("gcc -E $CFILE -o  c");return 0;}
+#!/bin/bah
+gcc -E $CFILE -o  c
