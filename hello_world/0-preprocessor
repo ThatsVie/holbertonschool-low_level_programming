@@ -1,2 +1,7 @@
 #!/bin/bash
-gcc -E -o c $CFILE
+#include <stdio.h>
+
+int main() {
+  printf("gcc -E $CFILE -o  c");
+    return 0;
+}
