@@ -1,10 +1,10 @@
 #include <stdio.h>
 /**
- * main - print alphabet without q and e
+ * main - Prints the alphabet without q and e.
  *
  * Return: 0
  */
-int main (void)
+int main(void)
 {
 	int n;
 
@@ -12,9 +12,10 @@ int main (void)
 	{
 		if (n != 'q' && n != 'e')
 		{
-		putchar(n);
+														putchar(n);
 		}
-	}
-	putchar ('\n');
+}
+	putchar('\n');
 
-	reurn (0);	
+	return (0);
+}
