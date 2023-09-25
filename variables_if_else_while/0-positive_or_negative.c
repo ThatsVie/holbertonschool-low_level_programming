@@ -2,11 +2,10 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- *  * main - Positive anything is better than negative nothing
- *   *
- *    *
- *     * Return: Always success
- *     */
+ * main - Prints the alphabetic
+ *
+ * Return: Always (Success)
+ */
 int main(void)
 {
 	int n;
