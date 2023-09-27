@@ -4,7 +4,7 @@
  * @c: parameter to be checked
  * Return: 1 or 0
  */
-int_islower(int C)
+int _islower(int C)
 {
 	if (c >= 'a' && c <= 'z')
 		return (1);
