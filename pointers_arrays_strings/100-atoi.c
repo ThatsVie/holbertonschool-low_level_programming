@@ -32,7 +32,7 @@ int _atoi(char *s)
 		}
 		else
 		{
-			(return 0);
+			return 0;
 		}
 	}
 
@@ -41,5 +41,5 @@ int _atoi(char *s)
 		result = result * 10 + (*s - '0');
 		s++;
 	}
-	(return result * sign);
+	return result * sign;
 }
