@@ -3,7 +3,7 @@
 /**
  * _atoi - function recreation
  * @s: input
- * Return: 0
+ * Return: i * sign
  */
 
 int _atoi(char *s)
