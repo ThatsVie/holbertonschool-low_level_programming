@@ -6,44 +6,29 @@
  * Return: 0
  */
 
-#include <stdio.h>
-
 int _atoi(char *s)
 {
 	int result = 0;
 	int sign = 1;
-
-	while (*s)
+	int i = 0;
+	while (s[i] != '\0')
 	{
-		if (*s == ' ')
-		{
-			s++;
-		}
-		else if (*s == '-')
+		if (s[i] == '-')
 		{
 			sign = -sign;
-			s++;
 		}
-		else if (*s == '+')
-		{
-			s++;
-		}
-		else if (*s >= '0' && *s <= '9')
+		else if (s[i] >= '0' && s[i] <= '9')
 		{
 			break;
 		}
-		else
-		{
-			return 0;
-		}
+		i++;
 	}
 
-	while (*s >= '0' && *s <= '9')
+	while (s[i] >= '0' && s[i] <= '9')
 	{
-		result = result * 10 + (*s - '0');
-		s++;
+		result = result * 10 + (s[i] = '0');
+		i++;
 	}
 
 	return result * sign;
 }
-
