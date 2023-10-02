@@ -3,32 +3,30 @@
 /**
  * _atoi - function recreation
  * @s: input
- * Return: i * sign
+ * Return: 0
  */
 
 int _atoi(char *s)
 {
 	int result = 0;
 	int sign = 1;
-	int i = 0;
-	while (s[i] != '\0')
+
+	while (*s == ' ' || *s == '\t' || *s == '\n')
 	{
-		if (s[i] == '-')
-		{
-			sign = -sign;
-		}
-		else if (s[i] >= '0' && s[i] <= '9')
-		{
-			break;
-		}
-		i++;
+		s++;
 	}
 
-	while (s[i] >= '0' && s[i] <= '9')
+	if (*s == '-')
 	{
-		result = result * 10 + (s[i] = '0');
-		i++;
+		sign = -1;
+		s++;
 	}
 
-	return result * sign;
+	while (*s >= '0' && *s <= '9')
+	{
+		result = result * 10 + (*s - '0');
+		s++;
+	}
+
+	return sign * result:
 }
