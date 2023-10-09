@@ -5,7 +5,7 @@
  * the bytes in the string accept
  * @s: string being searched
  * @accept: bytes searched for
- * Return:  a pointer to the byte in s that matches one of the
+ * Return: a pointer to the byte in s that matches one of the
  * bytes in accept, or NULL if no such byte is found
  */
 
