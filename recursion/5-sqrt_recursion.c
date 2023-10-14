@@ -5,7 +5,7 @@
  * Return: square root if exists, or -1 if not
  */
 
-int _sqrt_recursive (int n)
+int _sqrt_recursion(int n)
 {
 	if (n < 0)
 	{
