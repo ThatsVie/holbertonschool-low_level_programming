@@ -36,5 +36,5 @@ int find_sqrt(int n, int guess)
 		return (-1);
 	}
 
-	return find_sqrt(n, guess + 1);
+	return (find_sqrt(n, guess + 1));
 }
