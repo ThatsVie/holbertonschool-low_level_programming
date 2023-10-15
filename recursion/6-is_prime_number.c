@@ -1,4 +1,6 @@
 #include "main.h"
+int is_prime_recursive(int n, int divisor)
+
 /**
  * is_prime_number - determines if number is prime
  * @n: given number
