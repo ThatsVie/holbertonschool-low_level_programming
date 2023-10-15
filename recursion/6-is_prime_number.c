@@ -15,7 +15,7 @@ int is_prime_number(int n)
 
 /**
  * prime_helper - recursive calculation for is_prime_number
- * @base: n 
+ * @base: n
  * @divisor: integer checks if base is divisible by anything but 1 and self
  * Return: 1 if base is prime, 0 if not
  */
