@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 #include <string.h>
+#include <stdio.h>
 
 /**
  * _strdup - allocates memory for copy of input string 'str'
@@ -25,6 +26,6 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 
-	strcpy(duplicate, str);
+	(void)strcpy(duplicate, str);
 	return (duplicate);
 }
