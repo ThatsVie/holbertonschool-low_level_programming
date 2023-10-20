@@ -13,13 +13,14 @@
 char *_strdup(char *str)
 {
 	char *duplicate;
+	size_t length;
 
 	if (str == NULL)
 	{
 		return (NULL);
 	}
 
-	size_t length = strlen(str);
+	length = strlen(str);
 
 	duplicate = (char *)malloc(length + 1);
 
