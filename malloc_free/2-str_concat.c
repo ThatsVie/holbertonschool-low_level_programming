@@ -1,4 +1,5 @@
 #include "main.h"
+#include "_strlen.c"
 #include <stdlib.h>
 #include <string.h>
 
@@ -22,8 +23,8 @@ char *str_concat(char *s1, char *s2)
 		s2 = "";
 	}
 
-	size_t len1 = strlen(s1);
-	size_t len2 = strlen(s2);
+	size_t len1 = _strlen(s1);
+	size_t len2 = _strlen(s2);
 
 	char *concatenated = (char *)malloc(len1 + len2 + 1);
 
