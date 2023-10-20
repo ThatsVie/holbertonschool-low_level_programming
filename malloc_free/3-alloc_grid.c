@@ -7,14 +7,14 @@
  * @height: number of rows in 2D array
  *
  * Return: On success, a pointer to allocatec 2D array.
- * If width or height is 0 or negative,or 
+ * If width or height is 0 or negative,or
  * if memory allocation fails, returns NULL
  */
 
 int **alloc_grid(int width, int height)
 {
 	int **grid;
-	int i,j;
+	int i, j;
 
 	if (width <= 0 || height <= 0)
 	{
