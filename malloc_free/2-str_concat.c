@@ -1,7 +1,6 @@
 #include "main.h"
 #include "_strlen.c"
 #include <stdlib.h>
-#include <string.h>
 
 /**
  * str_concat - concatenates teo string.
@@ -14,6 +13,11 @@
 
 char *str_concat(char *s1, char *s2)
 {
+	size_t len1;
+	size_t len2;
+	char *concatenated;
+	size_t i;
+
 	if (s1 == NULL)
 	{
 		s1 = "";
@@ -23,10 +27,9 @@ char *str_concat(char *s1, char *s2)
 		s2 = "";
 	}
 
-	size_t len1 = _strlen(s1);
-	size_t len2 = _strlen(s2);
-
-	char *concatenated = (char *)malloc(len1 + len2 + 1);
+	len1 = _strlen(s1);
+	len2 = _strlen(s2);
+	concatenated = (char *)malloc(len1 + len2 + 1);
 
 	if (concatenated == NULL)
 	{
