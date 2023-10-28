@@ -1,4 +1,6 @@
-#include "dog.h"
+#include "dog.h"i
+#include <stdlib.h>
+#include <stddef.h>
 
 /**
  * new_dog - creates a new dog with name, age and owner
