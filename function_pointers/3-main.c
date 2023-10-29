@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
 	if (argc != 4)
 	{
 		printf("Usage: %s <a> <operator> <b>\n", argv[0]);
-		return (98); // Return error code for incorrect arguments
+		return (98);
 	}
 
 	a = atoi(argv[1]);
@@ -34,7 +34,7 @@ int main(int argc, char *argv[])
 	}
 
 	answer = obj.f(a, b);
-	printf("%d\n", ans);
+	printf("%d\n", answer);
 
 	return (0);
 }
