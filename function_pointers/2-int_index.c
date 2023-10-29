@@ -6,7 +6,7 @@
  * @size: number of elemetns in the array
  * @cmp: function pointer for custom comparison
  *
- * Return: index of the first occurrence of the integer or 
+ * Return: index of the first occurrence of the integer or
  * -1 if not found or in case of errors
  */
 
