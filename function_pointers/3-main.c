@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
 
 	if (argc != 4)
 	{
-		printf("Usage: %s <a> <operator> <b>\n", argv[0]);
+		printf("Error\n", argv[0]);
 		return (98);
 	}
 
@@ -24,12 +24,12 @@ int main(int argc, char *argv[])
 
 	if ((*argv[2] == '%' || *argv[2] == '/') && b == 0)
 	{
-		printf("Error: Division by zero\n");
+		printf("Error\n");
 		return (100);
 	}
 	if (obj.f == NULL)
 	{
-		printf("Error: Incalid operator\n");
+		printf("\n");
 		return (99);
 	}
 
