@@ -4,7 +4,7 @@
 
 /**
  * print_numbers- prints numbers
- * @seperator: string to be printed between the numbers
+ * @separator: string to be printed between the numbers
  * @n: number of integer values to print
  * @...: variadic arguments representing the numbers to be printed
  *
@@ -29,7 +29,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		numbers = va_arg(args, int);
 		if (separator == NULL)
 		{
-			if (i == n -1)
+			if (i == n - 1)
 				printf("%d\n", numbers);
 			else
 				printf("%d", numbers);
