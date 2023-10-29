@@ -29,7 +29,7 @@ int main(int argc, char *argv[])
 	}
 	if (obj.f == NULL)
 	{
-		printf("\n");
+		printf("Error\n");
 		return (99);
 	}
 
