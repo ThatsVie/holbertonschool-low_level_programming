@@ -7,11 +7,11 @@
  * @format: list of arguments to print
  */
 
-void print_all (const char * const format, ...)
+void print_all(const char * const format, ...)
 {
 	va_list list;
 	int a = 0, b = 0;
-	char *sep =", ";
+	char *sep = ", ";
 	char *str;
 
 	va_start(list, format);
@@ -20,7 +20,7 @@ void print_all (const char * const format, ...)
 		b++;
 	while (format && format[a])
 	{
-		if (a == (b -1))
+		if (a == (b - 1))
 		{
 			sep = "";
 		}
