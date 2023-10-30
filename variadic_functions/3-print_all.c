@@ -28,7 +28,7 @@ void print_all (const char * const format, ...)
 		}
 		else if (format[i] == 'f')
 		{
-			printf("%s%f", sep va_args, double));
+			printf("%s%f", sep, va_args(args, double));
 		}
 		else if (format[i] == 's')
 		{
