@@ -1,6 +1,6 @@
 #include "lists.h"
 #include <stdio.h>
-#include <stdlib.>
+#include <stdlib.h>
 
 /**
  * free_list - frees the memory allocated for list_t linked list
