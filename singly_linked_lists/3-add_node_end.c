@@ -36,3 +36,4 @@ list_t *add_node_end(list_t **head, const char *str)
 	iterator->next = end_node;
 
 	return (end_node);
+}
