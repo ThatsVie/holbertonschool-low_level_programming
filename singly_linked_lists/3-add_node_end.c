@@ -21,10 +21,10 @@ list_t *add_node_end(list_t **head, const char *str)
 	}
 	end_node->next = NULL;
 
-	if (*head == NUL)
+	if (*head == NULL)
 	{
 		*head = end_node;
-		return (end_node;
+		return (end_node);
 	}
 
 	iterator = *head;
