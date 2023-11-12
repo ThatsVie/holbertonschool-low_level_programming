@@ -6,7 +6,7 @@
  * @n: data for new node
  * Return: on success, address if new node. On failure, NULL
  */
-listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n);
+listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
 	listint_t *current, *node;
 	unsigned int count = 0;
