@@ -2,7 +2,7 @@
 
 /**
  * get_nodeint_at_index - returns the nth node of listint_t list
- * head: pointer to head of list
+ * @head: pointer to head of list
  * @index: the index of nth node, starting at 0
  *
  * Return: pointer to the node at nth index. If it doesnt exist return NULL
