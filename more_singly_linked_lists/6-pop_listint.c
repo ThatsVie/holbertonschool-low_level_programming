@@ -13,7 +13,7 @@ int pop_listint(listint_t **head)
 	int deleted_data;
 
 	if (!head || !*head)
-		return 0;
+		return (0);
 
 	deleted_node = *head;
 	deleted_data = (*head)->n;
