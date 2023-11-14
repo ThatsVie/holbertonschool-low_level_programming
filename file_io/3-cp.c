@@ -26,7 +26,7 @@ int main(int argc, char *argv[])
 		exit (98);
 	}
 
-	if ((file_to = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC,S_IRUSR | S_IWUSR | S_IRGRP)) == -1)
+	if ((file_to = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, S_IRUSR | S_IWUSR | S_IRGRP | S_IROTH)) == -1)
 	{
 		close(file_from);
 		dprintf(STDERR_FILENO,"Error: Can't write to file %s\n", argv[2]);
