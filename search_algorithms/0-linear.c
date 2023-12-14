@@ -9,11 +9,11 @@
 int linear_search(int *array, size_t size, int value)
 {
 	size_t index;  /* Index of the current element being checked */
-	
+
 	/* Check for NULL array */
 	if (array == NULL)
 		return (-1);
-	
+
 	/* Iterate through the array */
 	for (index = 0; index < size; index++)
 	{
